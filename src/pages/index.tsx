@@ -1,5 +1,4 @@
-import {createBrowserRouter,createRoutesFromElements, Route, RouterProvider, } from 'react-router-dom'
-
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 // // pages
 
 
