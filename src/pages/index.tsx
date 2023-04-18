@@ -1,11 +1,12 @@
-import { Inter } from 'next/font/google'
+import {createBrowserRouter,createRoutesFromElements, Route, RouterProvider, } from 'react-router-dom'
 
-const inter = Inter({ subsets: ['latin'] })
+// // pages
+
 
 export default function Home() {
-  return (
+  return (  
     <>
-      <div>Hello World</div>
+    Home
     </>
   )
 }
