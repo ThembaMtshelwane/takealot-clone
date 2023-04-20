@@ -2,6 +2,7 @@ import { Flex } from '@chakra-ui/react';
 import React from 'react';
 import Services from './Services/Services';
 import End from './End/End';
+import Crumbs from './Crumbs/Crumbs';
 
 type FooterProps = {
     
@@ -21,6 +22,7 @@ const Footer:React.FC<FooterProps> = () => {
                 borderRadius='0px'  
                 >
                 <Services/>
+                <Crumbs/>
                 <End/>
             </Flex> 
         </div>
