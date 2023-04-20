@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import MainLayout from './MainLayout';
+import SearchBar from '../components/SearchBar/SearchBar';
 
 interface RootLayoutProps  {
   children: React.ReactNode;
@@ -14,6 +15,7 @@ const RootLayout:React.FC<RootLayoutProps> = ({children}) => {
     <>
     <Navbar/>
     <MainLayout>
+      <SearchBar/>
       <main>{children}</main>
     </MainLayout>
     <Footer/>
