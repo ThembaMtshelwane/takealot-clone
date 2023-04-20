@@ -48,6 +48,8 @@ const Navbar:React.FC<NavbarProps> = () => {
                         <Text >|</Text>
                         <Link  href='/register' p='3px 15px'>Register</Link>
                         <Text>|</Text>
+                        <Link  href='/account/orders' p='3px 15px'>Orders</Link>
+                        <Text>|</Text>
                         <Link  href='/myAccount' p='3px 15px'>My Account</Link>
                         <Text >|</Text>
 
