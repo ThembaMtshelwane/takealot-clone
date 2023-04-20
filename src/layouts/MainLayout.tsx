@@ -15,7 +15,7 @@ const MainLayout:React.FC<MainLayoutProps> = ({children}) => {
             height='90vh'
             alignContent='center'
             border='2px solid #265e9e' 
-            bg='white'
+            bg='gray.100'
             borderRadius='0px'  
             >
                 {children}

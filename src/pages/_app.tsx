@@ -10,6 +10,7 @@ import {router} from '../Routes/index'
 // Layout
 import RootLayout from '../layouts/RootLayout'
 import { RouterProvider } from 'react-router-dom'
+import Orders from './Orders/Orders'
 
 //Pages
 
@@ -19,8 +20,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider>
     <RootLayout>
-      {/* <Component {...pageProps} /> */}
-      <RouterProvider router={router}/>
+      <Component {...pageProps} />
+      <Orders/>
+      {/* <RouterProvider router={router}/> */}
      </RootLayout>
     </ChakraProvider>
   )
