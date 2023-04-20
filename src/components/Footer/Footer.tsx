@@ -1,5 +1,6 @@
 import { Flex } from '@chakra-ui/react';
 import React from 'react';
+import Services from './Services/Services';
 
 type FooterProps = {
     
@@ -18,7 +19,7 @@ const Footer:React.FC<FooterProps> = () => {
                 bg='white'
                 borderRadius='0px'  
                 >
-                Footer
+                <Services/>
             </Flex> 
         </div>
     )
