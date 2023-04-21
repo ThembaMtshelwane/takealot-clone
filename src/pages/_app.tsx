@@ -6,11 +6,12 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import type { AppProps } from 'next/app'
 import {router} from '../Routes/index'
+import ReactDOM from 'react-dom/client'
 
 // Layout
 import RootLayout from '../layouts/RootLayout'
 import { RouterProvider } from 'react-router-dom'
-import Cart from './Cart/Cart'
+
 
 //Pages
 

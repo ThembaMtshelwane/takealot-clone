@@ -1,4 +1,4 @@
-import { Box, Flex,Grid,GridItem,SimpleGrid,Text} from '@chakra-ui/react';
+import { Box, Flex,Grid,GridItem,Text, } from '@chakra-ui/react';
 import React from 'react';
 
 type ServicesProps = {
@@ -8,7 +8,7 @@ type ServicesProps = {
 const Services:React.FC<ServicesProps> = () => {
     
     return(
-        <Grid templateColumns='repeat(5,1fr)' p='20px 0' bg='gray.100'>
+        <Grid templateColumns='repeat(5,1fr)' p='20px 0'>
             <GridItem>
                 <Box margin='10px'>
                     <Text fontSize={15} fontWeight={700}>Shop</Text>
