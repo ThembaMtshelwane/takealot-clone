@@ -3,17 +3,17 @@ import InfoBox from './InfoBox';
 import { Flex } from '@chakra-ui/react';
 import FeaturedItems from './FeaturedItems';
 
-type AdsProps = {
+type RightSideProps = {
     
 };
 
-const Ads:React.FC<AdsProps> = () => {
+const RightSide:React.FC<RightSideProps> = () => {
     
     return(
-        <Flex border='2px solid red' width='70vw' direction='column'>
+        <Flex border='2px solid red' width='70vw' direction='column' bg='white'> 
             <InfoBox/>
             <FeaturedItems/>
          </Flex>
     )
 }
-export default Ads;
+export default RightSide;
