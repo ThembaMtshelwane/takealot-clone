@@ -1,7 +1,8 @@
 import React from 'react';
-import InfoBox from './InfoBox';
 import { Flex } from '@chakra-ui/react';
-import FeaturedItems from './FeaturedItems';
+import InfoBox from '../Ads/InfoBox';
+import FeaturedItems from '../Ads/FeaturedItems';
+
 
 type RightSideProps = {
     

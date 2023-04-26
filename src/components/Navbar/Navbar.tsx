@@ -1,8 +1,6 @@
 import { Button, Flex, Link,Spacer,Text } from '@chakra-ui/react';
 import React from 'react';
-import TakealotLogo from '../../../public/takealot-logo.svg'
-import nextLogo from '../../../public/next.svg'
-import About from '@/src/pages/About/About';
+import takealot from '../../../public/takealot-logo.svg'
 
 type NavbarProps = {
     
@@ -36,7 +34,7 @@ const Navbar:React.FC<NavbarProps> = () => {
                     <Flex direction='row' fontSize={13} color='#4d4d4f' alignItems='center'>
                        
                         <Button onClick={home} height='60px' borderRadius={0} >
-                             <img src={nextLogo} alt="Takealot Logo" />                             
+                             <img src={takealot} alt="Takealot Logo" />                             
                         </Button>
                        
                        <Link href="/help" p='3px 15px'>Help Center </Link>

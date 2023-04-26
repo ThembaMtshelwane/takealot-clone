@@ -1,6 +1,6 @@
 import { Flex } from '@chakra-ui/react';
 import React from 'react';
-import OrderInfo from './OrderInfo';
+import OrderInfo from '../Ads/OrderInfo';
 
 type LeftSideProps = {
     

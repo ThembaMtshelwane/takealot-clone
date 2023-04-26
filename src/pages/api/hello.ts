@@ -5,9 +5,13 @@ type Data = {
   name: string
 }
 
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
-) {
-  res.status(200).json({ name: 'John Doe' })
-}
+
+// export default function getProducts(
+//   req: NextApiRequest,
+//   res: NextApiResponse<Data>
+// ) {
+//   fetch("https://fakestoreapi.com/products")
+//   .then((res) => res.json())
+//   .then((json) => console.log(json));
+//   return res
+// }

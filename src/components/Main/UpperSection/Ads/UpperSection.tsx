@@ -1,7 +1,7 @@
 import { Flex } from '@chakra-ui/react';
 import React from 'react';
-import RightSide from './RightSide';
-import LeftSide from './LeftSide';
+import LeftSide from '../layout/LeftSide';
+import RightSide from '../layout/RightSide';
 
 type UpperSectionProps = {
     
