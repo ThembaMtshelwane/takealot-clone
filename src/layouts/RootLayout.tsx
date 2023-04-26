@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import MainLayout from './MainLayout';
 import SearchBar from '../components/SearchBar/SearchBar';
+import Main from '../components/Main/Ads/InfoBox';
 
 interface RootLayoutProps  {
   children: React.ReactNode;
