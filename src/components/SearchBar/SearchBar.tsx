@@ -18,7 +18,7 @@ const SearchBar:React.FC<SearchBarProps> = () => {
         </Box>
         
         <InputGroup borderRadius={5} size="sm" bg={'white'} width='75vw'> 
-          <Input type="text" placeholder="Search..." border="1px solid #949494" />
+          <Input type="text" placeholder="Search for products, brands..." border="1px solid #949494" color='#4d4d4f' />
           <InputRightAddon  p={0}  border="none"  >
             <Button size="sm" borderLeftRadius={0} borderRightRadius={3.3} border="1px solid #949494"  bg='#4d4d4f'>
             {<Search2Icon color="gray.50"/>}
