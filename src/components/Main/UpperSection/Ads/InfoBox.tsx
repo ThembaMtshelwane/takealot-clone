@@ -32,6 +32,7 @@ const InfoBox:React.FC<InfoBoxProps> = () => {
             <Icon as={ChevronLeftIcon} onClick={clickLeft} borderRadius='100%'/>
             {<p> {images2[imageCount]}</p> }
             {/* <Image src={images2[imageCount]} alt='Dan Abramov' /> */}
+            {/* <Image src='../../../../../public/Ads/InfoBox/image1.jpg' alt="Takealot Logo" width='100%'/>  */}
             <Spacer/>
             <Icon as={ChevronRightIcon} onClick={clickRight} borderRadius='100%'/>
          </Flex>
