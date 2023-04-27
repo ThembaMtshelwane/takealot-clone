@@ -24,7 +24,7 @@ const Navbar:React.FC<NavbarProps> = () => {
                             </Button>
                        </Link>
                        
-                       <Link href="/help" p='3px 15px'>Help Center </Link>
+                       <Link href="/help-centre" p='3px 15px'>Help Center </Link>
                        <Text >|</Text>
                        <Link href="/sell" p='3px 15px'>Sell on Takealot </Link>
                        
@@ -35,21 +35,19 @@ const Navbar:React.FC<NavbarProps> = () => {
                         <Text>|</Text>
                         <Link  href='/account/orders' p='3px 15px'>Orders</Link>
                         <Text>|</Text>
-                        {/* <Link  href='/account' p='3px 15px'> */}
-                            <MyAccountMenu/>
-                        {/* </Link>s */}
+                        <MyAccountMenu/>
 
                         <Link href='/wishlist'>
                              <Button p='8px 6px' mr={1} borderRadius='100%' bg='#f4697a'
                                _hover={{bg: '#f25266' }}>
-                                  <img src="https://img.icons8.com/ios-filled/20/ffffff/like--v1.png"/>
+                                  <Image src="https://img.icons8.com/ios-filled/20/ffffff/like--v1.png" alt='Wishlist'/>
                              </Button>
                         </Link>
 
                         <Link  href='/cart'>
                             <Button p='8px 6px' mr={1} bg='#1c8644'
                               _hover={{bg: '#15823e' }}>
-                                 <img src="https://img.icons8.com/external-anggara-glyph-anggara-putra/20/ffffff/external-cart-retail-anggara-glyph-anggara-putra-4.png"/>
+                                 <Image src="https://img.icons8.com/external-anggara-glyph-anggara-putra/20/ffffff/external-cart-retail-anggara-glyph-anggara-putra-4.png" alt='cart'/>
                             </Button>
                         </Link>
 
