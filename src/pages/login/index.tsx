@@ -19,7 +19,7 @@ type indexProps = {
     
 };
 
-const index:React.FC<indexProps> = () => {
+const Login:React.FC<indexProps> = () => {
     const [showPassword, setShowPassword] = useState(false);
 
     const handleShowClick = () => setShowPassword(!showPassword);
@@ -102,4 +102,4 @@ const index:React.FC<indexProps> = () => {
         </Flex>
       )
 }
-export default index;
+export default Login;
