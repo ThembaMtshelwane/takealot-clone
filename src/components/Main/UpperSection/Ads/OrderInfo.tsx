@@ -16,7 +16,7 @@ const OrderInfo:React.FC<OrderInfoProps> = () => {
             </Box>
            
             <Box ml={5} mt={0}>
-                <Text fontWeight={700} fontSize='15px'>Where's my order </Text>
+                <Text fontWeight={700} fontSize='15px'>Where&apos;s my order </Text>
                 <Text mt={1} fontWeight={400} fontSize='12px'>Check your delivery or collection status</Text>
             </Box>
         </Flex>
