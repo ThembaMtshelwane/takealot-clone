@@ -11,10 +11,10 @@ const Main:React.FC<MainProps> = () => {
     
     return (  
         <>
-            <Flex direction='column'>
+            {/* <Flex direction='column'>
                 <UpperSection/>
                 <Products/>
-            </Flex>
+            </Flex> */}
         </>
       )
 }
