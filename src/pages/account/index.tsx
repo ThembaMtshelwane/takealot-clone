@@ -38,7 +38,7 @@ const index:React.FC<indexProps> = () => {
                         </Flex>
                         <List color='#0b79bf' fontSize='14px'>
                             <Stack spacing={2}>
-                                <Link href='/account/credit'><ListItem>Credit & Refunds</ListItem></Link>
+                                <Link href='/account/credits'><ListItem>Credit & Refunds</ListItem></Link>
                                 <Link href='/voucher'><ListItem>Redeem Gift Voucher</ListItem></Link>    
                             </Stack>
                         </List>
