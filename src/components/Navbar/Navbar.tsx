@@ -1,5 +1,6 @@
 import { Button, Flex, Link,Spacer,Text,Image } from '@chakra-ui/react';
 import React from 'react';
+import MyAccountMenu from './MyAccountMenu';
 
 type NavbarProps = {
     
@@ -34,8 +35,9 @@ const Navbar:React.FC<NavbarProps> = () => {
                         <Text>|</Text>
                         <Link  href='/account/orders' p='3px 15px'>Orders</Link>
                         <Text>|</Text>
-                        <Link  href='/account' p='3px 15px'>My Account</Link>
-                        <Text >|</Text>
+                        {/* <Link  href='/account' p='3px 15px'> */}
+                            <MyAccountMenu/>
+                        {/* </Link>s */}
 
                         <Link href='/wishlist'>
                              <Button p='8px 6px' mr={1} borderRadius='100%' bg='#f4697a'
