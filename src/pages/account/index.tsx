@@ -81,16 +81,14 @@ const index:React.FC<indexProps> = () => {
                 <GridItem>
                     <Box margin='10px'  p='19px 24px 24px' bg='white' height='185px'>
                         <Flex>
-                             <Text fontSize='16px' fontWeight={700} mb={2}>Orders</Text>
+                             <Text fontSize='16px' fontWeight={700} mb={2}>Support</Text>
                              <Spacer/>
                              <Image src="https://img.icons8.com/external-anggara-glyph-anggara-putra/20/000000/external-cart-retail-anggara-glyph-anggara-putra-4.png" alt='cart'/>
                         </Flex>
                         <List color='#0b79bf' fontSize='14px'>
                             <Stack spacing={2}>
-                                <Link href='/account/orders'><ListItem>Orders</ListItem></Link>
-                                <Link href='/account/invoices'><ListItem>Invoices</ListItem></Link>
-                                <Link href='/returns'><ListItem>Returns</ListItem></Link>
-                                <Link href='/account/reviews'><ListItem>Product Reviews</ListItem></Link>      
+                                <Link href='/help-centre'><ListItem>Help Cntre</ListItem></Link>
+                                <Link href='/'><ListItem>Logout</ListItem></Link>      
                             </Stack>
                         </List>
                     </Box>
