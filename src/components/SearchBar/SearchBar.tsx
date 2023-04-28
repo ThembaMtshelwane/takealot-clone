@@ -11,7 +11,7 @@ type SearchBarProps = {
 const SearchBar:React.FC<SearchBarProps> = () => {
     
     return(
-      <Flex bg={'#0b79bf'} height='99.48px' direction='row' align='center'>
+      <Flex bg={'#0b79bf'} height='48px' direction='row' align='center'>
        
         <Box p='9px 64px 9px 15px'>
           <ShopByDepartment/>               
