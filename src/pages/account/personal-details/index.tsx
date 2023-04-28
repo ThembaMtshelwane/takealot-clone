@@ -1,3 +1,4 @@
+import MyAccountLayout from '@/src/layouts/MyAccountLayout';
 import React from 'react';
 
 type indexProps = {
@@ -6,6 +7,13 @@ type indexProps = {
 
 const index:React.FC<indexProps> = () => {
     
-    return <div>Personal Details</div>
+    return (
+         <>
+         <MyAccountLayout>
+            
+         </MyAccountLayout>
+
+         </>
+    )
 }
 export default index;
