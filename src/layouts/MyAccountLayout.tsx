@@ -35,7 +35,7 @@ const MyAccountLayout:React.FC<MyAccountLayoutProps> = ({children}) => {
                         <GridItem>
                             <Box p='19px 24px 24px' pt='0' bg='white'>
                                 <Flex>
-                                     <Image pr={2} src="https://img.icons8.com/external-anggara-glyph-anggara-putra/20/000000/external-cart-retail-anggara-glyph-anggara-putra-4.png" alt='cart'/>
+                                <Image  pr={2} src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/20/4d4d4f/external-glyph-travel-tanah-basah-glyph-tanah-basah-7.png" alt='card'/>
                                      <Text fontSize='16px' fontWeight={700} mb={2}>Payments & Credit</Text>
                                 </Flex>
                                 <List pl={7} color='#0b79bf' fontSize='14px'>
@@ -50,7 +50,7 @@ const MyAccountLayout:React.FC<MyAccountLayoutProps> = ({children}) => {
                         <GridItem>
                             <Box p='19px 24px 24px'  pt='0' bg='white'>
                                 <Flex>
-                                     <Image pr={2} src="https://img.icons8.com/external-anggara-glyph-anggara-putra/20/000000/external-cart-retail-anggara-glyph-anggara-putra-4.png" alt='cart'/>
+                                     <Image mr={2} bg='#4d4d4f'borderRadius='100%' p={1} src="https://img.icons8.com/fluency-systems-filled/20/ffffff/null/guest-male.png" alt='account'/>
                                      <Text fontSize='16px' fontWeight={700} mb={2}>Customer Information</Text>
                                 </Flex>
                                 <List pl={7} color='#0b79bf' fontSize='14px'>
@@ -66,7 +66,7 @@ const MyAccountLayout:React.FC<MyAccountLayoutProps> = ({children}) => {
                         <GridItem>
                             <Box  p='19px 24px 24px' pt='0' bg='white'>
                                 <Flex>
-                                     <Image  pr={2} src="https://img.icons8.com/external-anggara-glyph-anggara-putra/20/000000/external-cart-retail-anggara-glyph-anggara-putra-4.png" alt='cart'/>
+                                     <Image  pr={2} src="https://img.icons8.com/ios-filled/20/4d4d4f/null/like--v1.png" alt='heart'/>
                                      <Text fontSize='16px' fontWeight={700} mb={2}>My Lists</Text>
                                 </Flex>
                                 <List  pl={7} color='#0b79bf' fontSize='14px'>

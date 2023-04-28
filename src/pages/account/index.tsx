@@ -16,7 +16,7 @@ const index:React.FC<indexProps> = () => {
                         <Flex>
                              <Text fontSize='16px' fontWeight={700} mb={2}>Orders</Text>
                              <Spacer/>
-                             <Image src="https://img.icons8.com/external-anggara-glyph-anggara-putra/20/000000/external-cart-retail-anggara-glyph-anggara-putra-4.png" alt='cart'/>
+                             <Image src="https://img.icons8.com/external-anggara-glyph-anggara-putra/20/4d4d4f/external-cart-retail-anggara-glyph-anggara-putra-4.png" alt='cart'/>
                         </Flex>
                         <List color='#0b79bf' fontSize='14px'>
                             <Stack spacing={2}>
@@ -34,7 +34,7 @@ const index:React.FC<indexProps> = () => {
                         <Flex>
                              <Text fontSize='16px' fontWeight={700} mb={2}>Payments & Credit</Text>
                              <Spacer/>
-                             <Image src="https://img.icons8.com/external-anggara-glyph-anggara-putra/20/000000/external-cart-retail-anggara-glyph-anggara-putra-4.png" alt='cart'/>
+                             <Image src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/20/4d4d4f/external-glyph-travel-tanah-basah-glyph-tanah-basah-7.png" alt='card'/>
                         </Flex>
                         <List color='#0b79bf' fontSize='14px'>
                             <Stack spacing={2}>
@@ -50,7 +50,7 @@ const index:React.FC<indexProps> = () => {
                         <Flex>
                              <Text fontSize='16px' fontWeight={700} mb={2}>Customer Information</Text>
                              <Spacer/>
-                             <Image src="https://img.icons8.com/external-anggara-glyph-anggara-putra/20/000000/external-cart-retail-anggara-glyph-anggara-putra-4.png" alt='cart'/>
+                             <Image bg='#4d4d4f'borderRadius='100%' p={1} src="https://img.icons8.com/fluency-systems-filled/20/ffffff/null/guest-male.png" alt='account'/>
                         </Flex>
                         <List color='#0b79bf' fontSize='14px'>
                             <Stack spacing={2}>
@@ -67,7 +67,7 @@ const index:React.FC<indexProps> = () => {
                         <Flex>
                              <Text fontSize='16px' fontWeight={700} mb={2}>My Lists</Text>
                              <Spacer/>
-                             <Image src="https://img.icons8.com/external-anggara-glyph-anggara-putra/20/000000/external-cart-retail-anggara-glyph-anggara-putra-4.png" alt='cart'/>
+                             <Image src="https://img.icons8.com/ios-filled/20/4d4d4f/null/like--v1.png" alt='heart'/>
                         </Flex>
                         <List color='#0b79bf' fontSize='14px'>
                             <Stack spacing={2}>
@@ -83,7 +83,7 @@ const index:React.FC<indexProps> = () => {
                         <Flex>
                              <Text fontSize='16px' fontWeight={700} mb={2}>Support</Text>
                              <Spacer/>
-                             <Image src="https://img.icons8.com/external-anggara-glyph-anggara-putra/20/000000/external-cart-retail-anggara-glyph-anggara-putra-4.png" alt='cart'/>
+                             <Image bg='#4d4d4f' p={1} borderRadius='100%' src="https://img.icons8.com/ios-filled/20/ffffff/null/question-mark.png" alt='question'/>
                         </Flex>
                         <List color='#0b79bf' fontSize='14px'>
                             <Stack spacing={2}>
