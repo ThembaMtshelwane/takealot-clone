@@ -13,7 +13,7 @@ const MyAccountLayout:React.FC<MyAccountLayoutProps> = ({children}) => {
             <Flex>
                 <Box m={2}>
                     <Box border='2px solid gray.50'  width='25vw' bg='white'>
-                    <Text p={5} pb='0' fontSize={20} fontWeight={700} color=' black'>My Account</Text>
+                    <Text p={5} pb='0' pt='1' fontSize={20} fontWeight={700} color=' black'>My Account</Text>
                     <Grid templateColumns='repeat(1,1fr)' p='20px 0'>
                         <GridItem>
                             <Box p='19px 24px 24px' pt='0' bg='white'>
