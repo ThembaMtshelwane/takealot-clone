@@ -1,12 +1,29 @@
 import { Box, Flex,Grid,GridItem,Text,Image, Link, Stack } from '@chakra-ui/react';
 import React from 'react';
+import { account,company,help,Service } from './ServiceInfo';
 
-type ServicesProps = {
-    
+
+type ServicesComponetProps = {
+    service:Service
 };
 
-const Services:React.FC<ServicesProps> = () => {
-    
+const ServicesComponet:React.FC<ServicesComponetProps> = ({service}) => {
+    return (
+        <div>
+         <Box margin='10px'>
+            <Text fontSize={15} fontWeight={700}>{service.heading}</Text>
+            {service.list.map((item) => (
+            <Link href={item.link} key={item.name}>
+              <p>{item.name}</p>
+            </Link>
+            ))}
+         </Box>
+        </div>
+    )
+}
+
+const Services:React.FC = () => {
+
     return(
         <Grid templateColumns='repeat(5,1fr)' p='20px 0'>
             <GridItem>
@@ -20,19 +37,13 @@ const Services:React.FC<ServicesProps> = () => {
             </GridItem>
             </GridItem>
             <GridItem>
-                <Box margin='10px'>
-                    <Text fontSize={15} fontWeight={700}>Help</Text>
-                </Box>
+                <ServicesComponet service ={help}/>
             </GridItem>
             <GridItem>
-                <Box margin='10px'>
-                    <Text fontSize={15} fontWeight={700}>Account</Text>
-                </Box>
+                <ServicesComponet service ={account}/>
             </GridItem>
             <GridItem>
-                <Box margin='10px'>
-                    <Text fontSize={15} fontWeight={700}>Company</Text>
-                </Box>
+                <ServicesComponet service ={company}/>
             </GridItem>
             <GridItem>
                 <Box margin='10px'>

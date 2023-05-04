@@ -16,7 +16,7 @@ export const getProducts = async ():Promise<Product[]> => {
   return data.products;
 };
 
-export async function getCatergories():Promise<string[]>  {
+export const getCatergories = async ():Promise<string[]> => {
   const response = await fetch('https://dummyjson.com/products/categories')
   const data = await response.json();
   return data;
