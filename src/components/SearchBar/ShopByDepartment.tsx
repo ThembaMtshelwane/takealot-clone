@@ -1,3 +1,4 @@
+import { getCatergories } from '@/src/pages/api/store';
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import {
     Menu,
@@ -12,7 +13,7 @@ type ShopByDepartmentProps = {
 };
 
 const ShopByDepartment:React.FC<ShopByDepartmentProps> = () => {
-    
+
     return(
      <Menu>
         <MenuButton borderRadius={0} as={Button} rightIcon={<ChevronDownIcon />}
@@ -29,11 +30,11 @@ const ShopByDepartment:React.FC<ShopByDepartmentProps> = () => {
           Shop by Department
         </MenuButton>
         <MenuList>
-          <MenuItem>Download</MenuItem>
-          <MenuItem>Create a Copy</MenuItem>
-          <MenuItem>Mark as Draft</MenuItem>
-          <MenuItem>Delete</MenuItem>
-          <MenuItem>Attend a Workshop</MenuItem>
+          {getCatergories().map((catergory) => (
+            <MenuItem border='2px solid white' width ='202px' height='295px' bg='white'key={catergory}>
+              <p>${catergory}</p>
+            </MenuItem>
+          ))}
         </MenuList>
      </Menu>
     )
