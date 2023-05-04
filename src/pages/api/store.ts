@@ -10,13 +10,13 @@ export interface Product {
   thumbnail: string;  
 }
 
-export const getProducts = async () => {
+export const getProducts = async ():Promise<Product[]> => {
   const response = await fetch('https://dummyjson.com/products?skip=0&limit=100')
   const data = await response.json();
   return data.products;
 };
 
-export const getCatergories = async () => {
+export async function getCatergories():Promise<string[]>  {
   const response = await fetch('https://dummyjson.com/products/categories')
   const data = await response.json();
   return data;

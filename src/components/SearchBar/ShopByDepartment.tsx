@@ -30,9 +30,30 @@ const ShopByDepartment:React.FC<ShopByDepartmentProps> = () => {
           Shop by Department
         </MenuButton>
         <MenuList>
-          {getCatergories().map((catergory) => (
-            <MenuItem border='2px solid white' width ='202px' height='295px' bg='white'key={catergory}>
-              <p>${catergory}</p>
+          {[
+  "smartphones",
+  "laptops",
+  "fragrances",
+  "skincare",
+  "groceries",
+  "home-decoration",
+  "furniture",
+  "tops",
+  "womens-dresses",
+  "womens-shoes",
+  "mens-shirts",
+  "mens-shoes",
+  "mens-watches",
+  "womens-watches",
+  "womens-bags",
+  "womens-jewellery",
+  "sunglasses",
+  "automotive",
+  "motorcycle",
+  "lighting"
+].map((catergory) => (
+            <MenuItem bg='gray.100' width='90%' ml={3} mb={1} key={catergory}>
+              <p>{catergory}</p>
             </MenuItem>
           ))}
         </MenuList>
