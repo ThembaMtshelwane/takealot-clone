@@ -1,6 +1,6 @@
 import { Box, Flex,Grid,GridItem,Text,Image, Link, Stack } from '@chakra-ui/react';
 import React from 'react';
-import { account,company,help,Service } from './ServiceInfo';
+import { account,company,help,Service, shop, takealotGroup } from './ServiceInfo';
 
 
 type ServicesComponetProps = {
@@ -27,14 +27,10 @@ const Services:React.FC = () => {
     return(
         <Grid templateColumns='repeat(5,1fr)' p='20px 0'>
             <GridItem>
-                <Box margin='10px'>
-                    <Text fontSize={15} fontWeight={700}>Shop</Text>
-                </Box>
+                <ServicesComponet service ={shop}/>
                 <GridItem>
-                <Box margin='10px'>
-                    <Text fontSize={15} fontWeight={700}>Takealot.group</Text>
-                </Box>
-            </GridItem>
+                    <ServicesComponet service ={takealotGroup}/>
+                 </GridItem>
             </GridItem>
             <GridItem>
                 <ServicesComponet service ={help}/>

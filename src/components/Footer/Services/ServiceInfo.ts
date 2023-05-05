@@ -46,3 +46,21 @@ export const company ={
         {name:'Returns',link:'/returns'}
     ]
 } 
+
+export const shop ={
+    heading:'Shop',
+    list:[
+        {name:'Daily Deals',link:'/about'},
+        {name:'Apply Only Deals',link:'/contact'},
+        {name:'Clearance Sale',link:'/submit'},
+        {name:'Gift Vouchers',link:'/delivery'},
+    ]
+} 
+
+export const takealotGroup ={
+    heading:'Takealot.group',
+    list:[
+        {name:'Superbalist.com',link:'https://superbalist.com'},
+        {name:'Mr D',link:'https://mrd.com'},
+    ]
+} 
