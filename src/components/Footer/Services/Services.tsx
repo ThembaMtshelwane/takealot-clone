@@ -1,46 +1,33 @@
-import { Box, Flex,Grid,GridItem,Text,Image, Link, Stack } from '@chakra-ui/react';
+import { Box, Flex,Grid,GridItem,Text,Image, Stack } from '@chakra-ui/react';
 import React from 'react';
-import { account,company,help,Service, shop, takealotGroup } from './ServiceInfo';
-
-
-type ServicesComponetProps = {
-    service:Service
-};
-
-const ServicesComponet:React.FC<ServicesComponetProps> = ({service}) => {
-    return (
-        <div>
-         <Box margin='10px'>
-            <Text fontSize={15} fontWeight={700}>{service.heading}</Text>
-            {service.list.map((item) => (
-            <Link href={item.link} key={item.name}>
-              <p>{item.name}</p>
-            </Link>
-            ))}
-         </Box>
-        </div>
-    )
-}
+import { account,company,help, shop, takealotGroup } from './ServiceInfo';
+import SocialMedia from './SocialMedia';
+import ServiceComponent from './ServiceComponent';
 
 const Services:React.FC = () => {
 
     return(
         <Grid templateColumns='repeat(5,1fr)' p='20px 0'>
+            
             <GridItem>
-                <ServicesComponet service ={shop}/>
+                <ServiceComponent service ={shop}/>
                 <GridItem>
-                    <ServicesComponet service ={takealotGroup}/>
+                    <ServiceComponent service ={takealotGroup}/>
                  </GridItem>
             </GridItem>
+
             <GridItem>
-                <ServicesComponet service ={help}/>
+                <ServiceComponent service ={help}/>
             </GridItem>
+
             <GridItem>
-                <ServicesComponet service ={account}/>
+                <ServiceComponent service ={account}/>
             </GridItem>
+
             <GridItem>
-                <ServicesComponet service ={company}/>
+                <ServiceComponent service ={company}/>
             </GridItem>
+
             <GridItem>
                 <Box margin='10px'>
                     <Text fontSize={15} fontWeight={700} mb={2}>Download Our App</Text>
@@ -53,23 +40,8 @@ const Services:React.FC = () => {
                     </Flex>
                 </Box>
                 <GridItem>
-                <Box margin='10px'>
-                    <Text fontSize={15} fontWeight={700}>Follow Us</Text>
-                    <Flex>
-                        <Link href='https://facebook.com'>
-                        <Image src="https://img.icons8.com/fluency/25/null/facebook.png" alt='Facebook'/>
-                        </Link>
-                        
-                        <Link href='https://twitter.com'>
-                        <Image src="https://img.icons8.com/fluency/25/null/twitter-circled.png" alt='Twitter'/>
-                        </Link>
-
-                        <Link href='https://instagram.com' bg='#0b79bf' borderRadius='100%'>
-                        <Image src="https://img.icons8.com/ios/25/ffffff/null/instagram-new--v1.png" alt='Instagram'/>
-                        </Link>
-                    </Flex>
-                </Box>
-            </GridItem>
+                    <SocialMedia/>
+                </GridItem>
             </GridItem>
         </Grid>
     )
